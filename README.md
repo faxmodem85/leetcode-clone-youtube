@@ -1,4 +1,4 @@
-# Zoom Optics Web APp
+# Zoom Optics Web App
 
 ### Built With React, NextJS, TypeScript, TailwindCSS, Firebase
 
