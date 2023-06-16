@@ -3,12 +3,13 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-	apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-	authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-	projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-	storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-	messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-	appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID
+	apiKey: "AIzaSyClrqrLZ1RmMcztKyCey44ocadTe0XHRpc",
+	authDomain: "zoom-optical.firebaseapp.com",
+	projectId: "zoom-optical",
+	storageBucket: "zoom-optical.appspot.com",
+	messagingSenderId: "679452656591",
+	appId: "1:679452656591:web:e133ab899488a9b2b008ba",
+	measurementId: "G-J8T5ZR0215"
 };
 
 const app = !getApps.length ? initializeApp(firebaseConfig,'zoom') : getApp();
