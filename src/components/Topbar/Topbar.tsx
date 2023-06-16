@@ -44,8 +44,8 @@ const Topbar: React.FC<TopbarProps> = ({ problemPage }) => {
 	return (
 		<nav className='relative flex h-[50px] w-full shrink-0 items-center px-5 bg-dark-layer-1 text-dark-gray-7'>
 			<div className={`flex w-full items-center justify-between ${!problemPage ? "max-w-[1200px] mx-auto" : ""}`}>
-				<Link href='/' className='h-[22px] flex-1'>
-					<Image src='/logo-full.png' alt='Logo' height={100} width={100} />
+				<Link href='/' className='h-[100px] flex-1'>
+					<Image src='/logo-full.svg' alt='Logo' height={100} width={100} />
 				</Link>
 
 				{problemPage && (
@@ -76,13 +76,33 @@ const Topbar: React.FC<TopbarProps> = ({ problemPage }) => {
 
 				<div className='flex items-center space-x-4 flex-1 justify-end'>
 					<div>
-						<a
-							href='https://www.buymeacoffee.com/burakorkmezz'
+						<Link
+							href='/auth'
 							target='_blank'
 							rel='noreferrer'
-							className='bg-dark-fill-3 py-1.5 px-3 cursor-pointer rounded text-brand-orange hover:bg-dark-fill-2'
+							className='bg-dark-fill-3 py-1.5 px-3 cursor-pointer rounded white hover:bg-dark-fill-2'
 						>
-							Premium
+							Appointments
+						</Link>
+					</div>
+					<div>
+						<a
+							href='https://www.zoomoptics.com.au'
+							target='_blank'
+							rel='noreferrer'
+							className='bg-dark-fill-3 py-1.5 px-3 cursor-pointer rounded white hover:bg-dark-fill-2'
+						>
+							Begin Consult
+						</a>
+					</div>
+					<div>
+						<a
+							href='https://www.zoomoptics.com.au'
+							target='_blank'
+							rel='noreferrer'
+							className='bg-dark-fill-3 py-1.5 px-3 cursor-pointer rounded white hover:bg-dark-fill-2'
+						>
+							Company Site
 						</a>
 					</div>
 					{!user && (
