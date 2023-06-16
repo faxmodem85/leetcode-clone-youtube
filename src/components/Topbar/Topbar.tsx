@@ -75,15 +75,6 @@ const Topbar: React.FC<TopbarProps> = ({ problemPage }) => {
 				)}
 
 				<div className='flex items-center space-x-4 flex-1 justify-end'>
-					<div>
-						<Link
-							href='/auth'
-							target='_blank'
-							rel='noreferrer'
-							className='bg-dark-fill-3 py-1.5 px-3 cursor-pointer rounded white hover:bg-dark-fill-2'
-						>
-							Appointments
-						</Link>
 					</div>
 					<div>
 						<a
@@ -95,15 +86,6 @@ const Topbar: React.FC<TopbarProps> = ({ problemPage }) => {
 							Begin Consult
 						</a>
 					</div>
-					<div>
-						<a
-							href='https://www.zoomoptics.com.au'
-							target='_blank'
-							rel='noreferrer'
-							className='bg-dark-fill-3 py-1.5 px-3 cursor-pointer rounded white hover:bg-dark-fill-2'
-						>
-							Company Site
-						</a>
 					</div>
 					{!user && (
 						<Link
