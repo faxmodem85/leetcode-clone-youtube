@@ -75,7 +75,6 @@ const Topbar: React.FC<TopbarProps> = ({ problemPage }) => {
 				)}
 
 				<div className='flex items-center space-x-4 flex-1 justify-end'>
-					</div>
 					<div>
 						<a
 							href='https://www.zoomoptics.com.au'
@@ -85,7 +84,6 @@ const Topbar: React.FC<TopbarProps> = ({ problemPage }) => {
 						>
 							Begin Consult
 						</a>
-					</div>
 					</div>
 					{!user && (
 						<Link
